@@ -1,0 +1,6 @@
+# Compiled executables
+program[0-9]*
+!*.c
+*.o
+*.out
+.DS_Store
