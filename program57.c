@@ -1,0 +1,39 @@
+/*
+Q57: Find the sum of array elements.
+
+Sample Test Cases:
+Input 1:
+4
+2 4 6 8
+Output 1:
+20
+
+Input 2:
+3
+1 1 1
+Output 2:
+3
+*/
+
+#include <stdio.h>
+
+int main() {
+    int n;
+    int sum = 0; // Initializing sum to 0
+    
+    // Read the size of the array
+    scanf("%d", &n);
+    
+    int arr[n];
+    
+    // Loop to read elements and calculate their sum
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+        sum = sum + arr[i]; // Add the current element to sum
+    }
+    
+    // Print the final sum
+    printf("%d\n", sum);
+    
+    return 0;
+}
